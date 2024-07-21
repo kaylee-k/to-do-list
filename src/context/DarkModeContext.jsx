@@ -17,6 +17,7 @@ export function DarkModeProvider({ children }) {
     setDarkMode(isDark);
     updateDarkMode(isDark);
   }, []);
+
   return (
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
       {children}
